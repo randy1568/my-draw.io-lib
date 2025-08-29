@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
   <diagram name="第 1 页" id="UdlSb-uu1OFWNxeFyUQN">
-    <mxGraphModel dx="862" dy="1807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1260" dy="2101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -218,7 +218,7 @@
         <mxCell id="vNA8YWekhGHnuqV49X9y-81" value="summarizeConversation退回到基于滑动窗口阶段上下文处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="vNA8YWekhGHnuqV49X9y-90">
           <mxGeometry x="270" y="185" width="180" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="vNA8YWekhGHnuqV49X9y-82" value="summarizeConversation&lt;br&gt;通过LLM总结压缩当前的上下文" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;" vertex="1" parent="vNA8YWekhGHnuqV49X9y-90">
+        <mxCell id="vNA8YWekhGHnuqV49X9y-82" value="summarizeConversation&lt;br&gt;通过LLM总结压缩当前的上下文&lt;div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 16px; line-height: 22px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #222222;&quot;&gt;压缩的提示词：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 16px; line-height: 22px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #222222;&quot;&gt;SUMMARY_PROMPT&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;" vertex="1" parent="vNA8YWekhGHnuqV49X9y-90">
           <mxGeometry x="275" y="63" width="170" height="95" as="geometry" />
         </mxCell>
         <mxCell id="vNA8YWekhGHnuqV49X9y-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.018;entryY=0.409;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="vNA8YWekhGHnuqV49X9y-90" source="vNA8YWekhGHnuqV49X9y-73" target="vNA8YWekhGHnuqV49X9y-81">
@@ -272,8 +272,34 @@
         <mxCell id="vNA8YWekhGHnuqV49X9y-103" value="&lt;font color=&quot;#795e26&quot;&gt;GPT5连续性支持&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1250" y="430" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vNA8YWekhGHnuqV49X9y-108" target="vNA8YWekhGHnuqV49X9y-111">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="475" />
+              <mxPoint x="1220" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vNA8YWekhGHnuqV49X9y-108" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;流式处理&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1、流式返回处理&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2、中断处理&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1015" y="445" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-110" value="处理响应的LLM text&#xa;presentAssistantMessage" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vNA8YWekhGHnuqV49X9y-111" target="vNA8YWekhGHnuqV49X9y-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-111" value="1、reasoning推理消息实时显示&lt;div&gt;2、usage累积token统计&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-115" value="&lt;h2&gt;src/core/assistant-message&lt;/h2&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="830" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-116" value="presentAssistantMessage.ts&#xa;presentAssistantMessage" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vNA8YWekhGHnuqV49X9y-117" value="还要看下生成todoList的提示词" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="1080" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
